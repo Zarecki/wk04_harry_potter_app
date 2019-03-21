@@ -1,0 +1,7 @@
+<p>Here are all the students!</p>
+
+<% for student in @students %>
+<p>Name: <%= student.first_name %> <%= student.last_name%></p>
+<p>House: <%= student.find_students_house %></p>
+
+<% end %>

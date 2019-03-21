@@ -1,0 +1,22 @@
+<p>New Student Registration</p>
+
+<form method="post" action="/students">
+  <label for="first-name">First name: </label>
+  <input type="text" id="first-name" name="first_name"/>
+
+  <label for="last-name">Last name: </label>
+  <input type="text" id="last-name" name="last_name"/>
+
+  <label for="house">House: </label>
+  <select id="house" name="house">
+    <% @houses.each do |house| %>
+    <option value="<%= house.id %>"><%=house.name%></option>
+    <%end%>
+  </select>
+
+  <label for="age">Age: </label>
+  <input type="number" id="age" name="age"/>
+
+  <input type="submit" value="Register Student"/>
+
+</form>

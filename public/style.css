@@ -1,0 +1,13 @@
+nav {
+  background-color: #0073ade8;
+  padding: 1em;
+}
+
+nav a {
+  color: white;
+  font-family: 'Helvetica';
+}
+
+nav li {
+  padding: .35em;
+}
